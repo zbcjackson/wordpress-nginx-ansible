@@ -1,0 +1,12 @@
+---
+- name: Install Wordpress with LNMP
+  hosts: wordpress
+  become: yes
+  become_method: sudo
+
+  roles:
+    - server
+    - nginx
+    - php
+    - mysql
+    - wordpress
