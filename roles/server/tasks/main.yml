@@ -4,3 +4,5 @@
 - name: Update apt cache
   apt: upgrade=yes update_cache=yes cache_valid_time=3600
 
+- name: Open 80 port
+  ufw: rule=allow port=80
